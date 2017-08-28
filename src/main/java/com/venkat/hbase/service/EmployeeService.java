@@ -40,7 +40,7 @@ public class EmployeeService {
                 bytes = result.getValue(Bytes.toBytes("myColumnFamily"),Bytes.toBytes("firstName"));
                 e.setFirstName(Bytes.toString(bytes));
 
-                bytes = result.getValue(Bytes.toBytes("myColumnFamily"),Bytes.toBytes("fastName"));
+                bytes = result.getValue(Bytes.toBytes("myColumnFamily"),Bytes.toBytes("lastName"));
                 e.setLastName(Bytes.toString(bytes));
 
                 bytes = result.getValue(Bytes.toBytes("myColumnFamily"),Bytes.toBytes("email"));
@@ -102,7 +102,7 @@ public class EmployeeService {
             bytes = result.getValue(Bytes.toBytes("myColumnFamily"),Bytes.toBytes("firstName"));
             emp.setFirstName(Bytes.toString(bytes));
 
-            bytes = result.getValue(Bytes.toBytes("myColumnFamily"),Bytes.toBytes("fastName"));
+            bytes = result.getValue(Bytes.toBytes("myColumnFamily"),Bytes.toBytes("lastName"));
             emp.setLastName(Bytes.toString(bytes));
 
             bytes = result.getValue(Bytes.toBytes("myColumnFamily"),Bytes.toBytes("email"));
